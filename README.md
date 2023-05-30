@@ -13,7 +13,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -48,11 +47,16 @@ Users should be able to:
 
 ### Built with
 
+- React
+- CSS Module
+
 ### What I learned
+
+I learned a bit more about grid system in css
 
 ### Continued development
 
-### Useful resources
+More on Frontendmentor.io challenges
 
 ## Author
 
