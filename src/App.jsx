@@ -1,12 +1,7 @@
-import { useState } from 'react'
+import Testimonials from './components/testimonials'
 
 function App() {
-
-  return (
-    <>
-      testimonais grid section
-    </>
-  )
+  return <Testimonials />
 }
 
 export default App
