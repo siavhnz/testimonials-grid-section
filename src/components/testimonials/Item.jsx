@@ -1,9 +1,11 @@
 
+import styles from "./Item.module.css";
+
 const Item = ({ avatar, name, role, title, description }) => {
-    return <section>
-        <div>
-            <img src={avatar} alt={name} />
-            <div>
+    return <section className={styles.container}>
+        <div className={styles.header}>
+            <img src={avatar} alt={name} className={styles.avatar} />
+            <div className={styles.identity}>
                 <span>
                     {name}
                 </span>
@@ -12,11 +14,11 @@ const Item = ({ avatar, name, role, title, description }) => {
                 </span>
             </div>
         </div>
-        <h2>
+        <h2 className={styles.title}>
             {title}
         </h2>
-        <p>
-            {description}
+        <p className={styles.desc}>
+            “ {description} ”
         </p>
     </section>
 }

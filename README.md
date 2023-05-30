@@ -38,7 +38,8 @@ Users should be able to:
 ## My process
 
 - Prepare assets (Download project, Install Vite, Create Project, Get Assets, Initialize git)
-- Create Testimonails components
+- Create testimonails components
+- Work on mobile design based on `design` folder
 
 ### Work Time
 

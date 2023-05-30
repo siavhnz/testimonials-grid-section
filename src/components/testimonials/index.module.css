@@ -1,0 +1,46 @@
+
+.container {
+    padding: 4.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-family: var(--font);
+}
+.container > div {
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+}
+
+.container > div:first-of-type {
+    background-color: var(--color-moderate-violet);
+    background-image:url("../../assets/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem top;
+}
+
+.container > div:first-of-type img {
+    border: 2px solid var(--color-light-violet);
+}
+
+.container > div:nth-of-type(2) {
+    background-color: var(--color-very-dark-grayish-blue);
+}
+
+.container > div:nth-of-type(4) {
+    background-color: var(--color-very-dark-blackish-blue);
+}
+
+.container > div:nth-of-type(4) img {
+    border: 2px solid var(--color-light-violet);
+}
+
+.container > div:nth-of-type(3) span:first-of-type,
+.container > div:nth-of-type(3) span:nth-of-type(2),
+.container > div:nth-of-type(3) h2,
+.container > div:nth-of-type(3) p,
+.container > div:nth-of-type(5) span:first-of-type,
+.container > div:nth-of-type(5) span:nth-of-type(2),
+.container > div:nth-of-type(5) h2,
+.container > div:nth-of-type(5) p   {
+    color: var(--color-very-dark-blackish-blue)
+}

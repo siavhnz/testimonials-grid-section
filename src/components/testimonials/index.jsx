@@ -1,8 +1,9 @@
 import Item from "./Item";
 import { testimonails } from "../../store/testimonails";
+import styles from "./index.module.css";
 
 const Testimonials = () => {
-    return <div>
+    return <div className={styles.container}>
         {
             testimonails.map((item, index) => {
                 return <div key={index}>
