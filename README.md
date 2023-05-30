@@ -40,6 +40,7 @@ Users should be able to:
 - Prepare assets (Download project, Install Vite, Create Project, Get Assets, Initialize git)
 - Create testimonails components
 - Work on mobile design based on `design` folder
+- Work on Desktop design based on `design` folder
 
 ### Work Time
 

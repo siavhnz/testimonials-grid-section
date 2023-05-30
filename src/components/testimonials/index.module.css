@@ -33,14 +33,63 @@
 .container > div:nth-of-type(4) img {
     border: 2px solid var(--color-light-violet);
 }
+.container > div:nth-of-type(1) span:first-of-type,
+.container > div:nth-of-type(1) span:nth-of-type(2),
+.container > div:nth-of-type(1) h2,
+.container > div:nth-of-type(1) p,
+.container > div:nth-of-type(2) span:first-of-type,
+.container > div:nth-of-type(2) span:nth-of-type(2),
+.container > div:nth-of-type(2) h2,
+.container > div:nth-of-type(2) p,
+.container > div:nth-of-type(4) span:first-of-type,
+.container > div:nth-of-type(4) span:nth-of-type(2),
+.container > div:nth-of-type(4) h2,
+.container > div:nth-of-type(4) p   {
+    color: var(--color-white);
+}
 
-.container > div:nth-of-type(3) span:first-of-type,
-.container > div:nth-of-type(3) span:nth-of-type(2),
-.container > div:nth-of-type(3) h2,
-.container > div:nth-of-type(3) p,
-.container > div:nth-of-type(5) span:first-of-type,
-.container > div:nth-of-type(5) span:nth-of-type(2),
-.container > div:nth-of-type(5) h2,
-.container > div:nth-of-type(5) p   {
-    color: var(--color-very-dark-blackish-blue)
+@media (min-width: 64em) { /* 1024px */
+    .container {
+        display: grid;
+        max-width: 72.5em; /* 1160px */
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1.75rem;
+        row-gap: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container > div {
+        align-items: flex-start;
+    }
+
+    .container > div:first-of-type {
+        grid-column: 1 / 3;
+        background-position: right 5rem top;
+    }
+
+    .container > div:nth-of-type(3) {
+        grid-column: 1 / 2;
+    }
+
+    .container > div:nth-of-type(4) {
+        grid-column: 2 / 4;
+    }
+
+    .container > div:nth-of-type(5){
+        grid-column: 4 / -1;
+        grid-row: 1 / 3;
+    }
+
+    .container > div:nth-of-type(3) section,
+    .container > div:nth-of-type(4) section,
+    .container > div:nth-of-type(5) section   {
+        padding-bottom: 1.5rem;
+    }
+
+    .container > div:nth-of-type(3) p,
+    .container > div:nth-of-type(4) p,
+    .container > div:nth-of-type(5) p   {
+        padding-top: 0.5rem;
+    }
 }
